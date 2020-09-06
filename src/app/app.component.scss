@@ -1,0 +1,17 @@
+.spacer {
+    flex: 1 1 auto;
+}
+.custom-button {
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    padding: inherit;
+    border : none
+}
+.custom-button:hover {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid black;
+}
