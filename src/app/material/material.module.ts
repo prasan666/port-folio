@@ -7,10 +7,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatInputModule} from '@angular/material/input';
 
 
 
-const MODULES = [MatToolbarModule, MatIconModule, MatCardModule, MatButtonModule ,MatSlideToggleModule]
+
+const MODULES = [MatInputModule,MatToolbarModule, MatIconModule, MatCardModule, MatButtonModule ,MatSlideToggleModule]
 
 @NgModule({
   declarations: [],

@@ -1,30 +1,44 @@
-  <mat-toolbar class="toolbar">
-    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+<!-- header section -->
+<mat-toolbar class="card-neo">
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button> -->
-    <span>PK.</span>
-    <span class="example-spacer"></span>
+  <span>PK.</span>
+  <span class="example-spacer"></span>
 
-    <button mat-button aria-label="Button for Home" routerLink="home">
-      HOME
-    </button>
+  <button mat-button aria-label="Button for Home" routerLink="home">
+    HOME
+  </button>
 
-    <button mat-button aria-label="Button for Work" routerLink="work">
-      WORK
-    </button>
-    <button mat-button aria-label="Button for Projects" routerLink="projects">
-      PROJECTS
-    </button>
-    <button mat-button aria-label="Button for Contact" routerLink="contact">
-      CONTACT
-    </button>
+  <button mat-button aria-label="Button for Work" routerLink="work">
+    WORK
+  </button>
+  <button mat-button aria-label="Button for Projects" routerLink="projects">
+    PROJECTS
+  </button>
+  <button mat-button aria-label="Button for Contact" routerLink="contact">
+    CONTACT
+  </button>
 
-    <mat-slide-toggle disabled=true labelPosition='before' color='primary'><span class="material-icons">
-        ring_volume
-      </span></mat-slide-toggle>
-    <mat-slide-toggle disabled=true labelPosition='before' color='primary'><span class="material-icons">
-        nightlight
-      </span></mat-slide-toggle>
+  <mat-slide-toggle disabled=true labelPosition='before' color='primary'><span class="material-icons">
+      ring_volume
+    </span></mat-slide-toggle>
+  <mat-slide-toggle disabled=true labelPosition='before' color='primary'><span class="material-icons">
+      nightlight
+    </span></mat-slide-toggle>
 
-  </mat-toolbar>
-  <router-outlet></router-outlet>
+</mat-toolbar>
+<router-outlet></router-outlet>
+
+<!-- footer section -->
+<footer>
+  <div class="footer-card-neo d-flex justify-content-between align-items-center p-2">
+    <div class=""> &#169; 2021 by Prasanna Kumar </div>
+    <div class=" text-center">
+      <i  class="fab fa-linkedin"></i>
+      <i class="fab fa-github"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div class=" text-right"><a href="mailto:prasannakumarvelur@gmail.com">prasannakumarvelur@gmail.com</a></div>
+  </div>
+</footer>

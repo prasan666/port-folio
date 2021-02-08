@@ -1,0 +1,41 @@
+.contact-card{
+    border-radius: 6px;
+    background: #212121;
+    box-shadow: inset -20px 20px 40px #151515,
+      inset 20px -20px 40px #2d2d2d;
+    // width: auto;
+    text-align: center;
+    align-items: center;
+    color: white;
+    // font-family: 'Faster One', cursive;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  ::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: green !important;
+   }
+   ::ng-deep .mat-form-field-label {
+    /*change color of label*/
+    color: green !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: green !important;
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: green !important;
+  }
+ 
