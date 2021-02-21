@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../services/common.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-
-  constructor() { }
+  email : any = {}
+  constructor(private _commonService: CommonService) { }
 
   ngOnInit(): void {
+  }
+  
+  sendEmail() {
+    const payload = {
+      name: this.email.name,
+      email: this.email.email,
+      message: this.email.message
+    }
+    this._commonService.post('https://3bik2esuja.execute-api.ap-south-1.amazonaws.com/prod', payload).subscribe(res => {
+      console.log(res);
+    })
   }
 
 }
