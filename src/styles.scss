@@ -14,3 +14,37 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;  
 }
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  font-syle: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('assets/fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  font-syle: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('assets/fonts/Gilroy-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  font-syle: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url('assets/fonts/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  font-syle: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("assets/fonts/Gilroy-Bold.ttf") format('truetype');
+}
+
+
