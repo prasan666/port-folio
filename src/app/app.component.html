@@ -1,131 +1,219 @@
 <header id="navbar">
   <nav class="navbar navbar-expand-lg navbar-dark darker-color fixed-top py-4">
-      <div class="container">
-          <a class="navbar-brand" href="#">PK.</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#works">Works</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                  </li>
-              </ul>
-          </div>
+    <div class="container">
+      <a class="navbar-brand" href="#">PK.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" (click)="scroll('home')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scroll('about')">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scroll('works')">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scroll('contact')">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
   </nav>
 </header>
 
-<div id="home" class="mt-5 pt-5">
-
+<div id="home">
   <div class="position-relative">
-      <div>
-          <img class="blob-2" style="top: 0; transform: rotate(180deg);" src="assets/images/blob (1).svg" alt="">
-      </div>
+    <div>
+      <img class="blob-2" style="top: 0; transform: rotate(180deg);" src="assets/images/blob (1).svg" alt="">
+    </div>
   </div>
 
-  <div class="container h-100 d-flex align-items-center">
-      <div class="" data-aos="fade-up d-flex">
-          <h3 class="text-stroke">
-              <span>Hi, I'm</span> <span class="text-white">Prasanna Kumar.</span>
-          </h3>
-          <h3>
-              <span class="text-stroke">I'm a </span><span class="text-white">Full Stack Developer.</span>
-          </h3>
-      </div>
+  <div class="container vh-100 d-flex align-items-center">
+    <div class="" data-aos="fade-up d-flex">
+      <h3 class="text-stroke">
+        <span>Hi, I'm</span> <span class="text-white">Prasanna Kumar.</span>
+      </h3>
+      <h3>
+        <span class="text-stroke">I'm a </span><span class="text-white">Full Stack Developer.</span>
+      </h3>
+    </div>
   </div>
 </div>
 
 
-<div id="about" class="p-2 p-md-5">
+<div id="about" class=" mt-5 ">
   <div class="position-relative">
-      <div>
-          <img class="blob" src="assets/images/blob.svg" alt="">
-          <img class="blob-2" src="assets/images/blob (1).svg" alt="">
-      </div>
+    <div>
+      <img class="blob" src="assets/images/blob.svg" alt="">
+      <img class="blob-2" src="assets/images/blob (1).svg" alt="">
+    </div>
   </div>
-  <div class="container">
-      <div data-aos="fade-up d-flex">
-          <h3 class="text-stroke">01.</h3>
-          <h3
-              class="text-white">About Me</h3>
+  <div class="container vh-100">
+    <div data-aos="fade-up" class="d-flex">
+      <h3 class="text-stroke">01.</h3>
+      <h3 class="text-white">About Me</h3>
+    </div>
+    <p class="text-white" data-aos="fade-up">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book. It has survived not only five centuries.
+    </p>
+
+    <div class="row g-0 pt-5 justify-content-between">
+      <div class="col-md-6 mt-5" data-aos="fade-up">
+        <div class="position-relative">
+          <div class="p-3 accent-red box-number">
+            <h3 class="text-white">01</h3>
+          </div>
+        </div>
+        <div class="position-relative">
+          <h3 class="box-header">
+            <span class="text-stroke">
+              Professional
+            </span>
+            <span class="text-white">
+              Experience
+            </span>
+          </h3>
+        </div>
+        <div class="darker-color p-5 mt-5 box">
+          <h4 class="text-white mt-5 position-relative">LivBIM</h4>
+          <h5 class="text-white mt-4">2011-2021</h5>
+          <p class="text-white mt-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+            of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries.
+          </p>
+        </div>
       </div>
-      <p class="text-white" data-aos="fade-up">
+
+      <div class="col-md-6 mt-5" data-aos="fade-up" data-aos-delay="300">
+        <div class="position-relative">
+          <div class="p-3 accent-red box-number">
+            <h3 class="text-white">02</h3>
+          </div>
+        </div>
+        <div class="position-relative">
+          <h3 class="box-header">
+            <span class="text-stroke">
+              Educational
+            </span>
+            <span class="text-white">
+              Qualifications
+            </span>
+          </h3>
+        </div>
+        <div class="darker-color p-5 mt-5 box">
+          <h4 class="text-white mt-5 position-relative">LivBIM</h4>
+          <h5 class="text-white mt-4">2011-2021</h5>
+          <p class="text-white mt-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+            of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="breaker p-2 p-md-5">
+
+      <div class="position-relative">
+        <div>
+          <img class="blob-2" style="top: 0; transform: rotate(180deg);" src="assets/images/blob (1).svg" alt="">
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 data-aos="fade-up">
+          <span class="text-stroke">Working <span class="text-white">remotely,</span> based in</span> <span
+            class="text-white">Hyderbad (India).</span>
+        </h3>
+        <p class="text-white" data-aos="fade-up" data-aos-delay="300">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. It has survived not only five centuries.
-      </p>
-
-      <div class="row g-0 pt-5 justify-content-between">
-          <div class="col-md-6 mt-5" data-aos="fade-up">
-              <div class="position-relative">
-                  <div class="p-3 accent-red box-number">
-                      <h3 class="text-white">01</h3>
-                  </div>
-              </div>
-              <div class="position-relative">
-                  <h3 class="box-header">
-                      <span class="text-stroke">
-                          Professional
-                      </span>
-                      <span class="text-white">
-                          Experience
-                      </span>
-                  </h3>
-              </div>
-              <div class="darker-color p-5 mt-5 box">
-                  <h4 class="text-white mt-5 position-relative">LivBIM</h4>
-                  <h5 class="text-white mt-4">2011-2021</h5>
-                  <p class="text-white mt-2">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                      been the
-                      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                      of type and
-                      scrambled it to make a type specimen book. It has survived not only five centuries.
-                  </p>
-              </div>
-          </div>
-
-          <div class="col-md-6 mt-5" data-aos="fade-up" data-aos-delay="300">
-              <div class="position-relative">
-                  <div class="p-3 accent-red box-number">
-                      <h3 class="text-white">02</h3>
-                  </div>
-              </div>
-              <div class="position-relative">
-                  <h3 class="box-header">
-                      <span class="text-stroke">
-                          Educational
-                      </span>
-                      <span class="text-white">
-                          Qualifications
-                      </span>
-                  </h3>
-              </div>
-              <div class="darker-color p-5 mt-5 box">
-                  <h4 class="text-white mt-5 position-relative">LivBIM</h4>
-                  <h5 class="text-white mt-4">2011-2021</h5>
-                  <p class="text-white mt-2">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                      been the
-                      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                      of type and
-                      scrambled it to make a type specimen book. It has survived not only five centuries.
-                  </p>
-              </div>
-          </div>
+        </p>
       </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<div id="works" class="p-2 p-md-5">
+  <div class="position-relative">
+    <div>
+      <img class="blob" src="assets/images/blob.svg" alt="">
+      <img class="blob-2" src="assets/images/blob (1).svg" alt="">
+    </div>
+  </div>
+  <div class="container" data-aos="fade-up">
+    <div>
+      <h3 class="text-stroke">02.</h3>
+      <h3 class="text-white">My Works</h3>
+    </div>
+    <p class="text-white" data-aos="fade-up">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+
+    <div class="row g-0 pt-5 justify-content-between">
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="position-relative">
+          <h3 class="box-header-2">
+            <span class="text-stroke">
+              Project
+            </span>
+            <span class="text-white">
+              React's Componenets
+            </span>
+            <div>
+              <button type="button" class="btn btn-red px-3">Check it out</button>
+            </div>
+          </h3>
+        </div>
+        <div class="p-2 p-md-3 p-lg-5">
+          <div class="overflow-hidden box position-relative">
+            <div class="overlay"></div>
+            <img src="assets/images/01.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="position-relative">
+          <h3 class="box-header-2">
+            <span class="text-stroke">
+              Project
+            </span>
+            <span class="text-white">
+              React's Componenets
+            </span>
+            <div>
+              <button type="button" class="btn btn-red px-3">Check it out</button>
+            </div>
+          </h3>
+        </div>
+        <div class="p-2 p-md-3 p-lg-5">
+          <div class="overflow-hidden box position-relative">
+            <div class="overlay"></div>
+            <img src="assets/images/02.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>
@@ -133,184 +221,14 @@
 <div class="breaker p-2 p-md-5">
 
   <div class="position-relative">
-      <div>
-          <img class="blob-2" style="top: 0; transform: rotate(180deg);" src="assets/images/blob (1).svg" alt="">
-      </div>
-  </div>
-
-  <div class="container mt-3">
-      <h3 data-aos="fade-up">
-          <span class="text-stroke">Working <span class="text-white">remotely,</span> based in</span> <span
-              class="text-white">Hyderbad (India).</span>
-      </h3>
-      <p class="text-white" data-aos="fade-up" data-aos-delay="300">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries.
-      </p>
-  </div>
-</div>
-
-<div id="works" class="p-2 p-md-5">
-  <div class="position-relative">
-      <div>
-          <img class="blob" src="assets/images/blob.svg" alt="">
-          <img class="blob-2" src="assets/images/blob (1).svg" alt="">
-      </div>
-  </div>
-  <div class="container" data-aos="fade-up">
-      <div>
-          <h3 class="text-stroke">02.</h3>
-          <h3
-              class="text-white">My Works</h3>
-      </div>
-      <p class="text-white" data-aos="fade-up">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      </p>
-
-      <div class="row g-0 pt-5 justify-content-between">
-          <div class="col-md-6" data-aos="fade-up">
-              <div class="position-relative">
-                  <h3 class="box-header-2">
-                      <span class="text-stroke">
-                          Project
-                      </span>
-                      <span class="text-white">
-                          React's Componenets
-                      </span>
-                  <div>
-                      <button type="button" class="btn btn-red px-3">Check it out</button>
-                  </div>
-                  </h3>
-              </div>
-              <div class="p-2 p-md-3 p-lg-5">
-                  <div class="overflow-hidden box position-relative">
-                      <div class="overlay"></div>
-                      <img src="assets/images/01.jpg" alt="">
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="position-relative">
-                  <h3 class="box-header-2">
-                      <span class="text-stroke">
-                          Project
-                      </span>
-                      <span class="text-white">
-                          React's Componenets
-                      </span>
-                  <div>
-                      <button type="button" class="btn btn-red px-3">Check it out</button>
-                  </div>
-                  </h3>
-              </div>
-              <div class="p-2 p-md-3 p-lg-5">
-                  <div class="overflow-hidden box position-relative">
-                      <div class="overlay"></div>
-                      <img src="assets/images/02.jpg" alt="">
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-</div>
-
-<!-- <div class="breaker p-2 p-md-5">
-
-  <div class="position-relative">
-      <div>
-          <img class="blob-2" style="top: 0; transform: rotate(180deg);" src="assets/images/blob (1).svg" alt="">
-      </div>
+    <div>
+      <img class="blob-2" style="top: 0; transform: rotate(180deg);" src="assets/images/blob (1).svg" alt="">
+    </div>
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="300">
-      <h2>
-          <span class="text-stroke">Developed by <span class="text-white">Prasanna Kumar.</span>
-      </h2>
+    <h2>
+      <span class="text-stroke">Developed by <span class="text-white">Prasanna Kumar.</span></span>
+    </h2>
   </div>
-</div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- header section
-<mat-toolbar class="card-neo">
-  
-  <span>PK.</span>
-  <span class="example-spacer"></span>
-
-  <button mat-button aria-label="Button for Home" routerLink="home">
-    HOME
-  </button>
-
-  <button mat-button aria-label="Button for Work" routerLink="work">
-    WORK
-  </button>
-  <button mat-button aria-label="Button for Projects" routerLink="projects">
-    PROJECTS
-  </button>
-  <button mat-button aria-label="Button for Contact" routerLink="contact">
-    CONTACT
-  </button>
-
-  <mat-slide-toggle disabled=true labelPosition='before' color='primary'><span class="material-icons">
-      ring_volume
-    </span></mat-slide-toggle>
-  <mat-slide-toggle disabled=true labelPosition='before' color='primary'><span class="material-icons">
-      nightlight
-    </span></mat-slide-toggle>
-
-</mat-toolbar>
-<router-outlet></router-outlet>
-
-
-<footer>
-  <div class="footer-card-neo d-flex justify-content-between align-items-center p-2">
-    <div class=""> &#169; 2021 by Prasanna Kumar </div>
-    <div class=" text-center">
-      <i  class="fab fa-linkedin"></i>
-      <i class="fab fa-github"></i>
-      <i class="fab fa-twitter"></i>
-    </div>
-    <div class=" text-right"><a href="mailto:prasannakumarvelur@gmail.com">prasannakumarvelur@gmail.com</a></div>
-  </div>
-</footer> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
